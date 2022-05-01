@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    
+<style>
+    body{
+        background-image:url("img/reg.png");
+        background-size:cover;
+    }
+  .box{
+      width:400px;
+      padding:30px;
+      top:80px;
+      left:35%;
+      position: absolute;
+      text-align:center;
+  }
+  .h1{
+      color:green;
+      
+  }
+  .h3{
+    color:darkblue;
+}
+.text{
+    height:35px;
+    width:250px;
+    background-color:#ffff99;
+    border-color:lightblue;
+    border-radius:9px;
+}
+
+.register{
+    background-color:green;
+    height:30px;
+    width:100px;
+    border-radius:9px;
+    align:center;
+}
+
+</style>
+
+</head>
+<body >
+    <form class="box"  onsubmit="onformregister();" autocomplete="off">
+        
+        <fieldset>
+            <legend><h1 align="center" class="h1">Login</h1></legend>
+            <div>
+        <h2 class="h3">Username</h2><input type="text" placeholder="Username" id="username"  class="text" required/><br><br>
+        </div>
+
+        <div>
+        <h2 class="h3">Password</h2><input type="password" placeholder="Password" id="password" class="text" required/><br>
+        </div><br><br>
+
+        <div >
+        <input type="submit" value="login" onclick="alert('Successfully Registered')" id="login" class="register" ><br><br>
+        </div>
+
+        <div>
+        <b>Forgot Password?</b>
+        </div>
+
+        <div><a href="registration.html"><h3> Registration </h3></a>
+        </div>
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

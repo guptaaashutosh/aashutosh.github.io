@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>table</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+              $(document).ready(function(){
+                $("#delete1").click(function(){
+                  $("#row1").hide();
+                });
+
+                $("#delete2").click(function(){
+                  $("#row2").hide();
+                });
+
+                $("#delete3").click(function(){
+                  $("#row3").hide();
+                });
+
+                $("#delete4").click(function(){
+                  $("#row4").hide();
+                });
+              });
+            </script>
+
+            <style>
+            table, th, td {
+                border: 1px solid black;
+               
+              }
+              th, td {
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 40px;
+              }
+              .add{
+                  font-size:20px;
+                  height:30px;
+                  width:200px;
+                  align:right;
+                  border-radius:6px;
+                  background-color:lightgreen;
+                  margin-right:10px;
+                  margin-left:1250px;
+                  text-align:center;
+              }
+              </style>
+        </head>
+    <body> 
+        <p style="font-size:40px;">User Data</p>     
+       <p class="add">Add New Record</p>
+    <table style="width:100%;">  
+       <tr>
+        <th>Email</th>  
+        <th>Password</th>  
+        <th>Birth date</th>  
+        <th>Age</th>
+        <th>Country</th>  
+        <th>State</th>
+        <th>City</th>
+        <th width="200px">Action</th>  
+       </tr>
+       <tr id="row1">
+        <td>agupta354@rku.ac.in</td>
+        <td>1234</td>
+        <td>01-12-2000</td>
+        <td>21</td>
+        <td>India</td>
+        <td>Gujarat</td>
+        <td>Rajkot</td>
+        <td><div><input type="button" style="background-color:lightgreen;"value="Edit"/><input type="button" style="background-color:red;"value="Delete" id="delete1"/></div></td>
+      </tr>
+      <tr  id="row2">
+        <td>guptaaashu354@gmail.com</td>
+        <td>1234</td>
+        <td>01-12-2000</td>
+        <td>21</td>
+        <td>India</td>
+        <td>Gujarat</td>
+        <td>Rajkot</td>
+        <td><div><input type="button" style="background-color:lightgreen;"value="Edit"/><input type="button"style="background-color:red;"value="Delete" id="delete2" /></div></td>
+      </tr>
+      <tr id="row3">
+        <td>ajha645@rku.ac.in</td>
+        <td>1234</td>
+        <td>01-12-2000</td>
+        <td>21</td>
+        <td>India</td>
+        <td>Gujarat</td>
+        <td>Rajkot</td>
+        <td><div><input type="button" style="background-color:lightgreen;"value="Edit"/><input type="button" style="background-color:red;"value="Delete" id="delete3"/></div></td>
+      </tr>
+      <tr id="row4">
+        <td>akarn456@rku.ac.in</td>
+        <td>1234</td>
+        <td>01-12-2000</td>
+        <td>21</td>
+        <td>India</td>
+        <td>Gujarat</td>
+        <td>Rajkot</td>
+        <td><div><input type="button" style="background-color:lightgreen;"value="Edit"/><input type="button" style="background-color:red;"value="Delete"id="delete4"/></div></td>
+      </tr>
+    </table>
+
+
+    </body>
+       
+</html>
